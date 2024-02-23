@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #851a98;
+    --secondary: #530b60;
+    --primary-opac: #851a9833;
+    --secondary-opac: #530b6029;
+    --white: #fff;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+header h1#title {
+    text-align: center;
+    background: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+    font-size: 30px;
+}
+
+section.calculator {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.calc-ui {
+    width: 50%;
+    margin: 5rem auto;
+    box-shadow: rgb(139 37 166 / 32%) 0px 10px 50px;
+}
+
+label#expression {
+    position: absolute;
+    right: 0;
+    padding: 10px 1rem;
+    font-size: 18px;
+    color: var(--primary);
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.calc-ui input.form-control {
+    height: 100px;
+    width: 100%;
+    border: 1px solid var(--secondary-opac);
+    box-sizing: border-box;
+    padding: 1rem;
+    outline: none;
+    background: var(--primary-opac);
+    font-size: 25px;
+    text-align: right;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.calc-ui input.form-control::-webkit-input-placeholder {
+    font-weight: 400;
+    color: var(--primary-opac);
+    text-transform: uppercase;
+}
+
+section.calculator .buttons button {
+    font-size: 25px;
+    line-height: 35px;
+    padding: 15px;
+    background: var(--primary-opac);
+    border: 1px solid var(--secondary-opac);
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+section.calculator .buttons button:hover {
+    background: var(--secondary);
+    color: var(--white);
+    border: 1px solid var(--secondary);
+}
+
+
+
+section.calculator .buttons .items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+section.calculator .buttons .items:last-child {
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    background-color: var(--primary-opac);
+    color: var(--primary);
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}

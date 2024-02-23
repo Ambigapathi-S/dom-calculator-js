@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">DOM Calculator</h1>
+    </header>
+    <section class="calculator">
+      <div class="calc-ui">
+        <label id="expression"></label>
+        <input
+          type="text"
+          placeholder="Enter a number"
+          class="form-control"
+          id="result"
+        />
+        <div class="buttons">
+          <div class="items">
+            <button type="button" onclick="clearDisplay()" id="clear" class="btn clear">
+              C
+            </button>
+            <button type="button" onclick="backSpace()" class="btn clear">
+              ←
+            </button>
+            <button type="button" onclick="getOperator('.')">.</button>
+            <button type="button" onclick="getOperator('*')" id="multiply">X</button>
+          </div>
+          <div class="items">
+            <button type="button" onclick="getNumber('7')" id="7">7</button>
+            <button type="button" onclick="getNumber('8')" id="8">8</button>
+            <button type="button" onclick="getNumber('9')" id="9">9</button>
+            <button type="button" onclick="getOperator('/')">/</button>
+          </div>
+          <div class="items">
+            <button type="button" onclick="getNumber('4')" id="4">4</button>
+            <button type="button" onclick="getNumber('5')" id="5">5</button>
+            <button type="button" onclick="getNumber('6')" id="6">6</button>
+            <button type="button" onclick="getOperator('-')" id="subtract">-</button>
+          </div>
+          <div class="items">
+            <button type="button" onclick="getNumber('1')" id="1">1</button>
+            <button type="button" onclick="getNumber('2')" id="2">2</button>
+            <button type="button" onclick="getNumber('3')" id="3">3</button>
+            <button type="button" onclick="getOperator('+')" id="add">+</button>
+          </div>
+          <div class="items">
+            <button type="button" onclick="getNumber('0')" id="0">0</button>
+            <button type="button" onclick="getNumber('00')" id="00">00</button>
+            <button type="button" onclick="calculate()" id="equal">=</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p id="description">Developed By Ambigapathi. S - 2024</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  </body>
+</html>
