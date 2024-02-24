@@ -73,7 +73,7 @@ document.addEventListener("keydown", function (event) {
 
   const keyCode = event.keyCode;
 
-  if ((keyCode >= 48 && keyCode <= 57) || (keyCode >= 96 || keyCode <= 105) || (keyCode == 110) || (keyCode == 190)) {
+  if ((keyCode >= 48 && keyCode <= 57) || (keyCode >= 96 && keyCode <= 105) || (keyCode == 110) || (keyCode == 190)) {
     getNumber(event.key);
     event.preventDefault();
   } else {
